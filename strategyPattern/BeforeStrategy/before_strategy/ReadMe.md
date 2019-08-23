@@ -1,0 +1,2 @@
+Whitin some context, we have an interface, which is an abstract base class in Python terms
+that is common to all the supported algorithms. The context uses this interface to call the various algorithms defined by the concrete strategies that implemented the base class. Each concrete strategy implementation takes the same inputs and returns the same type of output , but is free to do so as the algorithm being implemented dictates. 
