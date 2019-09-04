@@ -1,5 +1,9 @@
 from before_strategy import Order, Shipper, ShippingCost
 
+"""When its instantiated a new cost calculator (ex. cost_calculator = ShippingCost()),
+we programming an implementation (the shippingCost() Object), not an abstraction. 
+This violate the D principle in Solid"""
+
 #Test federal Express Shipping
 
 order = Order(Shipper.fedex)

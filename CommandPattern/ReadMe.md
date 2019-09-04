@@ -19,3 +19,10 @@ Should:
 - parse the command line arguments
 - Execute the command
 - Notify user and log the results
+
+
+In fact strategy pattern also helps with a similar class of problems, though it's not a good fit here, since each  helper method has a different signature.
+
+Plus of Command pattern
+The commands are encapsulated  in separate ConcreteCommand objects. Each one knows how to process its command, and that's all it needs to do. 
+Note though, that the client does not pass in arguments to the execute method. Thath information is hidden and allows the Client to invoke any command without knowing any details. It's also easy to add new commands to the system. Just write new ConcreteCommands. Thath means we're following the Open/Closed principle.

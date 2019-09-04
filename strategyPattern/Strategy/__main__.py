@@ -5,7 +5,7 @@ from strategy import FedExStrategy, PostalStrategy, UPSStrategy
 order = Order("papas")
 strategy = FedExStrategy()
 cost_calculator = ShippingCost(strategy)
-cost = cost_calculator.shipping_cost(order)
+cost = cost_calculator.shipping_cost_calc(order)
 print(order.container)
 assert cost == 3.0
 
@@ -13,11 +13,13 @@ assert cost == 3.0
 order = Order("papas")
 strategy =UPSStrategy()
 cost_calculator = ShippingCost(strategy)
-cost = cost_calculator.shipping_cost(order)
+cost = cost_calculator.shipping_cost_calc(order)
 assert cost == 4.0
 #Test Postal Service shipping
 order = Order("papas")
 strategy = PostalStrategy()
 cost_calculator = ShippingCost(strategy)
-cost = cost_calculator.shipping_cost(order)
+cost = cost_calculator.shipping_cost_calc(order)
 assert cost == 5.0
+
+print("Test passed")

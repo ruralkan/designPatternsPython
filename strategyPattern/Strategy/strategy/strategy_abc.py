@@ -1,7 +1,7 @@
 from abc import ABCMeta, abstractmethod
 
 class AbsStrategy(object):
-    __metaclass_ = ABCMeta
+    __metaclass__ = ABCMeta
 
     @abstractmethod
     def calculate(self, order):

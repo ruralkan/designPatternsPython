@@ -1,6 +1,6 @@
 import sys
 from commad_executor import CommandExecutor
-"""__main.py violates dependency inversion principle since 
+"""__main__.py violates dependency inversion principle since 
 it depends upon the implementation of the ExecuteCommand method
  in the CommandExecutor class.
 """

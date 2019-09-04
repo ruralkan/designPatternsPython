@@ -1,6 +1,4 @@
-"""This class CommandExecutro violates the SRP, because  pases commands and then process them
-violates open/close principl, since if we would to change it to add new commands or change or remove existing ones
-The long list of if, elif, and else makes a bit fragile and a little hard on the eyes
+"""This class CommandExecutro violates the SRP and open close principle
 """
 
 class CommandExecutor(object):
